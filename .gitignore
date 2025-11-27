@@ -1,0 +1,17 @@
+# Ignorar carpeta de configuración de WebStorm (CRUCIAL)
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Ignorar dependencias de Node (si usas npm en el futuro)
+node_modules/
+npm-debug.log
+
+# Ignorar archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Ignorar carpetas de build (si usas frameworks más adelante)
+dist/
+build/
