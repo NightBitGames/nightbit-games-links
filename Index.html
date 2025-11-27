@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NightBit Games | LinkHub</title>
+
+    <!-- Kanit -->
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Icons / Branding -->
+    <link rel="icon" type="image/svg" sizes="32x32" href="assets/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="192x192" href="assets/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="512x512" href="assets/apple-touch-icon.png" />
+
+    <meta name="theme-color" content="#000000" />
+
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="theme-dark">
+<canvas id="stars"></canvas>
+
+<div class="layout">
+    <main class="container">
+        <img
+                src="assets/logo.png"
+                data-dark="assets/logo-light.svg"
+                data-light="assets/logo-dark.svg"
+                alt="NightBit Logo"
+                class="logo"
+        />
+        <div class="header-text">
+            <h1 class="studio-name">NightBit Games</h1>
+            <p class="tagline">
+                Un estudio de desarrollo de videojuegos que crea mundos desde la oscuridad;<br />
+                donde cada bit brilla como una estrella en la noche.
+            </p>
+        </div>
+
+        <!-- Toggle de tema -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+            <span class="theme-toggle__icon">🌙</span>
+            <span class="theme-toggle__label">Modo oscuro</span>
+        </button>
+
+        <!-- Links generados desde JSON -->
+        <section class="links" id="linksContainer">
+            <!-- Se llena dinámicamente desde links.json -->
+        </section>
+    </main>
+
+    <footer>
+        Powered by <span class="highlight">NightBit Games</span>
+    </footer>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
